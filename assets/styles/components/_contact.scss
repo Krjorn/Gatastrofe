@@ -1,0 +1,39 @@
+@use '../abstract/variable' as v;
+
+.contact {
+    background-color: v.$secondary-bg;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    #contact__title {
+        width: fit-content;
+        margin: auto;
+        background-color: v.$primary-color;
+        border-radius: 32px;
+        font-size: v.$title;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: .5rem 1rem;
+        color: v.$primary-bg;
+    }
+    .contact__text {
+        margin: 1.5rem 0;
+    }
+    .contact__icon   {
+        height: 64px;
+        width: 64px;
+        background: url(../img/icons/mail.svg) no-repeat center/48px, v.$secondary-color;
+        border-radius: 50%;
+        display: inline-block;
+        &:hover {
+            background-color: v.$link-hover;
+        }
+    }
+}
+
+@media screen and (min-width: v.$bp-tablet) {
+    .contact {
+        #contact__title {
+            font-size: v.$large-title;
+        }
+    }
+}

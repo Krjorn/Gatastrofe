@@ -1,0 +1,149 @@
+@use '../abstract/variable' as v;
+
+.content {
+    max-width: v.$max-w;
+    margin: auto;
+    padding: 6rem 1rem;
+    @include v.grid(2, 4, 200px, 1rem);
+    .card {
+        width: 156px;
+        text-align: center;
+        color: v.$secondary-color;
+        cursor: pointer;
+        img {
+            width: 152px;
+            border-radius: 50%;
+            margin-bottom: .5rem;
+            border: 3px solid transparent;
+        }
+        &:hover {
+            img {
+                border-color: v.$secondary-color;
+            }
+        }
+        h3 {
+            font-size: v.$small-title;
+            font-weight: 700;
+        }
+    }
+    #abissinio__info, #american__info,
+    #british__info, #devon__info,
+    #exotico__info, #bengala__info,
+    #maine__info, #persa__info,
+    #ragdoll__info, #scottish__info,
+    #siames__info, #sphynx__info {
+        display: none;
+    }
+    .card__info {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        .info__bg {
+            height: 100%;
+            width: 100%;
+            background-color: v.$overlay-bg;
+            z-index: 1;
+            position: absolute;
+        }
+        .info__overlay {
+            width: 80vw;
+            max-width: 485px;
+            background-color: v.$primary-bg;
+            padding: 1rem;
+            border: 2px solid v.$primary-color;
+            border-radius: 8px;
+            position: relative;
+            z-index: 2;
+            filter: drop-shadow(0 0 30px v.$overlay-bg);
+            .overlay__close {
+                background: url(../img/icons/close.svg) no-repeat center/cover, v.$secondary-color;
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                position: absolute;
+                top: -16px;
+                right: -16px;
+                cursor: pointer;
+            }
+            .overlay__content {
+                height: 80vh;
+                overflow: scroll;
+                .overlay__top {
+                    p {
+                        b {
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .overlay__text {
+                    margin: 1rem 0 1.5rem;
+                }
+                .overlay__carousel {
+                    height: 72px;
+                    .carousel__title {
+                        font-size: v.$large;
+                        font-weight: 700;
+                        margin-bottom: 1rem;
+                    }
+                    .swiper {
+                        .swiper-wrapper {
+                            .swiper-slide {
+                                img {
+                                    width: 200px;
+                                }
+                            }
+                        }
+                        .swiper-button-prev,
+                        .swiper-button-next {
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (min-height: v.$bp-height) {
+    .content {
+        .card__info {
+            .info__overlay {
+                .overlay__content {
+                    height: auto;
+                    overflow: auto;
+                    .overlay__carousel {
+                        height: fit-content;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: v.$bp-tablet) {
+    .content {
+        .card__info {
+            .info__overlay {
+                .overlay__content {
+                    .overlay__carousel {
+                        .swiper {
+                            .swiper-button-prev,
+                            .swiper-button-next {
+                                display: block;
+                                color: v.$tertiary-color;
+                                &:hover {
+                                    color: v.$secondary-color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

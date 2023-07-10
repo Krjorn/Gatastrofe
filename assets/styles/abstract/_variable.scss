@@ -1,0 +1,74 @@
+// FONTS
+
+$main-font: 'Rubik', sans-serif;
+
+// FONT SIZE
+
+$large-title: 3.5rem;
+$title: 2.5rem;
+$small-title: 1.5rem;
+$large: 1.25rem;
+$regular: 1rem;
+$small: .875rem;
+
+// MAX-WIDTH
+
+$max-w: 1128px;
+
+
+// COLORS
+
+$primary-bg: #FBFBF6;
+$secondary-bg: #FEE6E5;
+$overlay-bg: rgba(0, 0, 0, 0.3);
+$primary-color: #220C10;
+$secondary-color: #BB5330;
+$tertiary-color: rgba(187, 83, 48, 0.5);
+$link-hover: rgba(187, 83, 48, .7);
+$link-visited: #994427;
+
+// RESPONSIVE GRID
+
+@mixin grid($min-col-num, $max-col-num, $min-col-w-max, $col-gap) {
+    display: grid;
+    justify-items: center;
+    row-gap: 1.5rem;
+    column-gap: $col-gap;
+
+    // PROPORTIONAL GAP
+    $prop-gap: calc($col-gap * calc($max-col-num - 1) / $max-col-num);
+
+    // MINIMUM COLUMN WIDTH
+    $min-col-w: calc(100% / $min-col-num - $prop-gap);
+    
+    // MAXIMUM COLUMN WIDTH
+    $max-col-w-max: calc(100% / $max-col-num);
+    $max-col-w: max($min-col-w-max, calc($max-col-w-max - $prop-gap));
+
+    $min: min($min-col-w, $max-col-w);
+
+    grid-template-columns: repeat(auto-fit, minmax($min, 1fr));
+}
+
+// LINK
+
+@mixin link($size, $weight,) {
+    a {
+        font-size: $size;
+        font-weight: $weight;
+        text-decoration: none;
+        color: $secondary-color;
+        &:hover {
+            color: $link-hover;
+        }
+        &:visited {
+            color: $link-visited;
+        }
+    }
+}
+
+// BREAKPOINTS
+
+$bp-height: 720px;
+$bp-tablet: 768px;
+$bp-desktop: 1280px;

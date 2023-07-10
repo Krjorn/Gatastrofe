@@ -1,0 +1,35 @@
+@use '../abstract/variable' as v;
+
+.banner {
+    height: calc(100vh - 88px);
+    width: 100%;
+    background: url(../img/gatos/kitten.jpg) top/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .banner__title {
+        max-width: v.$max-w;
+        margin: auto;
+        font-size: v.$title;
+        font-weight: 700;
+        text-align: center;
+        text-transform: uppercase;
+        padding-inline: 1rem;
+        color: v.$primary-bg;
+    }
+    
+}
+
+@media screen and (min-width: v.$bp-tablet) {
+    .banner {
+        .banner__title {
+            font-size: v.$large-title;
+        }
+    }
+}
+
+@media screen and (min-width: v.$bp-desktop) {
+    .banner {
+        background-attachment: fixed;
+    }
+}

@@ -1,0 +1,32 @@
+@use '../abstract/variable' as v;
+
+.footer {
+    margin-top: 6rem;
+    padding: 1rem;
+    border-top: 2px solid v.$primary-color;
+    font-size: v.$small;
+    .footer__content {
+        max-width: v.$max-w;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        .content__links {
+            text-align: center;
+            .links__title {
+                font-weight: 500;
+                margin-bottom: .5rem;
+            }
+            .links__list {
+                li {
+                    @include v.link(v.$small, 400);
+                }
+            }
+        }
+        .content__text {
+            font-weight: 500;
+            @include v.link(v.$small, 500);
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@use '../abstract/variable' as v;
+
+#toTop {
+    position: fixed;
+    right: 5vw;
+    bottom: 2.5vh;
+    display: none;
+    height: 64px;
+    width: 64px;
+    background: url(../img/icons/arrow-up.svg) no-repeat center/48px, v.$tertiary-color;
+    border-radius: 50%;
+}

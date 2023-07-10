@@ -1,0 +1,8 @@
+@use './variable' as v;
+
+html, body {
+    font-family: v.$main-font;
+    background-color: v.$primary-bg;
+    color: v.$primary-color;
+    scroll-behavior: smooth;
+}

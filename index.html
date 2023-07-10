@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gatástrofe</title>
+    <link rel="shortcut icon" href="./assets/img/icons/favicon.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+</head>
+<body>
+    <header id="header">
+        <nav>
+            <img src="./assets/img/icons/logo.svg" alt="Logo da Gatástrofe">
+            <a href="#contact__title">CONTATO</a>
+        </nav>
+    </header>
+    <main>
+        <a id="toTop" href="#header"></a>
+        <section class="banner">
+            <h1 class="banner__title">Aprenda mais sobre seus amigos felinos</h1>
+        </section>
+        <section class="content">
+            <div class="card" onclick="openOverlay('abissinio'); defineType('abissinio')">
+                <img src="./assets/img/gatos/perfil/abissinio.jpg" alt="Imagem de um gato Abissínio">
+                <h3>Abissínio</h3>
+            </div>
+            <div class="card__info" id="abissinio__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 15 anos</p>
+                            <p><b>Peso:</b> 4 a 7 kg</p>
+                            <p><b>Cores:</b> azul, castanho, lilás...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Abissínio é uma raça de gato que se destaca pelo seu porte médio, seu corpo musculoso e flexível, e suas pernas longas e delgadas. Essas características lhe permitem saltar em locais altos, o que ele adora fazer. Além disso, é um felino muito curioso, investigador e inteligente, que precisa de espaços grandes para explorar e brincar. É um dos gatos que mais necessita de exercício e de gastar energia. Tem um forte vínculo com seus pais humanos e aprecia a companhia deles. Sua pelagem pode ser média ou curta, dependendo da genética, mas é sempre densa e sedosa.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-1.jpg" alt="Imagem de um gato Abissínio"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-2.jpg" alt="Imagem de um gato Abissínio"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-3.jpg" alt="Imagem de um gato Abissínio"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-4.jpg" alt="Imagem de um gato Abissínio"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-5.jpg" alt="Imagem de um gato Abissínio"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/abissinio/abissinio-6.jpg" alt="Imagem de um gato Abissínio"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('american'); defineType('american')">
+                <img src="./assets/img/gatos/perfil/american.png" alt="Imagem de um gato American Shorthair">
+                <h3>American Shorthair</h3>
+            </div>
+            <div class="card__info" id="american__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 15 a 20 anos</p>
+                            <p><b>Peso:</b> 3 a 6 kg</p>
+                            <p><b>Cores:</b> branco, castanho, preto...</p>
+                        </div>
+                        <p class="overlay__text">
+                            Originário dos Estados Unidos, o American Shorthair é um gato elegante e calmo, que vive por muitos anos e tem uma saúde de ferro. Ele é muito apegado à família e gosta de participar do cotidiano dos pais, brincando com as crianças e demonstrando afeto. Como ele é ativo e curioso, precisa de espaço para se exercitar e explorar o ambiente, além de acessórios como arranhadores e prateleiras. Ele também tem instinto caçador e pode perseguir pequenos animais, como camundongos e insetos. Por isso, é essencial que as portas e as janelas tenham grades e telas para evitar que ele fuja.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-1.jpg" alt="Imagem de um gato American Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-2.jpg" alt="Imagem de um gato American Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-3.jpg" alt="Imagem de um gato American Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-4.jpg" alt="Imagem de um gato American Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-5.jpg" alt="Imagem de um gato American Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/american/american-6.png" alt="Imagem de um gato American Shorthair"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('british'); defineType('british')">
+                <img src="./assets/img/gatos/perfil/british.png" alt="Imagem de um gato British Shorthair">
+                <h3>British Shorthair</h3>
+            </div>
+            <div class="card__info" id="british__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 7 a 12 anos</p>
+                            <p><b>Peso:</b> 4 a 8 kg</p>
+                            <p><b>Cores:</b> branco, castanho, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O British Shorthair é uma das raças de gato mais antigas e populares do mundo. Seu pelo curto e denso tem um charme especial. Esse gato é calmo e tranquilo, sem a agitação típica de outros felinos. Ele não precisa de muitos exercícios e prefere ficar no chão do que escalar ou saltar. Ele se adapta bem a crianças, idosos e outros animais, mas não gosta de ser tocado ou carregado no colo.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-1.jpg" alt="Imagem de um gato British Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-2.jpg" alt="Imagem de um gato British Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-3.jpg" alt="Imagem de um gato British Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-4.jpg" alt="Imagem de um gato British Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-5.jpg" alt="Imagem de um gato British Shorthair"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/british/british-6.png" alt="Imagem de um gato British Shorthair"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('devon'); defineType('devon')">
+                <img src="./assets/img/gatos/perfil/devon.jpg" alt="Imagem de um gato Devon Rex">
+                <h3>Devon Rex</h3>
+            </div>
+            <div class="card__info" id="devon__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 15 anos</p>
+                            <p><b>Peso:</b> 2 a 4 kg</p>
+                            <p><b>Cores:</b> bege, branco, castanho...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Devon Rex é uma raça de gatos que se caracteriza pelos pelos curtos e ondulados. Esses gatos são ativos e energéticos, gostam de se movimentar e explorar diferentes ambientes, mas também apreciam uma boa sonequinha durante o dia. São leais, amorosos e gentis, e têm uma forte ligação com a sua família. Eles adoram estar perto de quem eles amam e se adaptam bem à presença de estranhos. Sua pelagem não exige muitos cuidados, o que facilita o seu tratamento. No entanto, como são muito apegados à sua família, não é recomendado deixá-los sozinhos dentro de casa por um longo período de tempo.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-1.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-2.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-3.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-4.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-5.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/devon/devon-6.jpg" alt="Imagem de um gato Devon Rex"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('exotico'); defineType('exotico')">
+                <img src="./assets/img/gatos/perfil/exotico.jpg" alt="Imagem de um Gato Exótico">
+                <h3>Exótico</h3>
+            </div>
+            <div class="card__info" id="exotico__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 15 anos</p>
+                            <p><b>Peso:</b> 3 a 6 kg</p>
+                            <p><b>Cores:</b> branco, cinza, preto...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Gato Exótico, também conhecido como Exotic Shorthair, é uma raça de gato de origem norte-americana, resultado do cruzamento entre o Persa e o American Shorthair. Esses felinos têm um corpo robusto, pernas curtas e porte médio. Eles preferem um estilo de vida mais tranquilo e podem parecer “preguiçosos”, mas também se divertem com exercícios, caça e pulos, como outros gatos. O Gato Exótico é gentil e carinhoso, mas também independente e brincalhão. Ele gosta de se entreter sozinho, mas não dispensa um afago dos pais.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-1.png" alt="Imagem de um Gato Exótico"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-2.jpg" alt="Imagem de um Gato Exótico"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-3.jpg" alt="Imagem de um Gato Exótico"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-4.jpg" alt="Imagem de um Gato Exótico"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-5.jpg" alt="Imagem de um Gato Exótico"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/exotico/exotico-6.jpg" alt="Imagem de um Gato Exótico"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('bengala'); defineType('bengala')">
+                <img src="./assets/img/gatos/perfil/bengala.png" alt="Imagem de um Gato-de-bengala">
+                <h3>Gato-de-bengala</h3>
+            </div>
+            <div class="card__info" id="bengala__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 16 anos</p>
+                            <p><b>Peso:</b> 3 a 9 kg</p>
+                            <p><b>Cores:</b> gelo, marrom, mármore...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Gato-de-bengala é uma raça híbrida que resultou do cruzamento entre gatos domésticos e gatos selvagens asiáticos. Essa raça se destaca pela sua aparência exótica, que lembra a de um leopardo ou um tigre. Por terem uma origem selvagem, os gatos-de-bengala têm um temperamento forte e exigem cuidados especiais. Alguns problemas genéticos podem afetar a saúde desses animais, por isso é importante fazer um acompanhamento veterinário regular. Apesar de serem dóceis e companheiros com seus donos, os gatos-de-bengala também são independentes, fortes e atléticos. Eles precisam de espaços ao ar livre para gastar sua energia e exercitar seus instintos naturais.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-1.jpg" alt="Imagem de um Gato-de-bengala"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-2.jpg" alt="Imagem de um Gato-de-bengala"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-3.jpg" alt="Imagem de um Gato-de-bengala"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-4.jpg" alt="Imagem de um Gato-de-bengala"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-5.jpg" alt="Imagem de um Gato-de-bengala"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/bengala/bengala-6.png" alt="Imagem de um Gato-de-bengala"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('maine'); defineType('maine')">
+                <img src="./assets/img/gatos/perfil/maine.jpg" alt="Imagem de um gato Maine Coon">
+                <h3>Maine Coon</h3>
+            </div>
+            <div class="card__info" id="maine__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 9 a 15 anos</p>
+                            <p><b>Peso:</b> 7 a 14 kg</p>
+                            <p><b>Cores:</b> branco, castanho, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            Originário do estado de Maine, nos Estados Unidos, o Maine Coon é uma raça de gato musculosa e de estrutura óssea forte. Seu comprimento pode ultrapassar os 100 centímetros. Antigamente, era um gato de trabalho que vivia em ambientes externos e caçava roedores em celeiros e casas. Hoje, é um gato tranquilo, gentil e afetuoso, que tem um espírito brincalhão e um comportamento equilibrado e sociável. Ele se dá bem com crianças, mas costuma evitar estranhos.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-1.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-2.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-3.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-4.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-5.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/maine/maine-6.jpg" alt="Imagem de um gato Maine Coon"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('persa'); defineType('persa')">
+                <img src="./assets/img/gatos/perfil/persa.png" alt="Imagem de um gato Persa">
+                <h3>Persa</h3>
+            </div>
+            <div class="card__info" id="persa__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 17 anos</p>
+                            <p><b>Peso:</b> 3 a 7 kg</p>
+                            <p><b>Cores:</b> branco, castanho, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            A raça Persa é uma das mais antigas do mundo e se destaca pela sua inteligência e sua pelagem extensa. Esses gatos são tranquilos, caseiros e se adaptam bem a crianças e outros animais, desde que o ambiente seja calmo. Eles não costumam escalar móveis e prateleiras, mas gostam de brincar e ficar perto dos seus pais. São gatos carinhosos que adoram um colo e, quando você menos esperar, vai estar se aninhando nas suas pernas.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-1.jpg" alt="Imagem de um gato Persa"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-2.jpg" alt="Imagem de um gato Persa"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-3.jpg" alt="Imagem de um gato Persa"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-4.jpg" alt="Imagem de um gato Persa"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-5.jpg" alt="Imagem de um gato Persa"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/persa/persa-6.png" alt="Imagem de um gato Persa"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('ragdoll'); defineType('ragdoll')">
+                <img src="./assets/img/gatos/perfil/ragdoll.png" alt="Imagem de um gato Ragdoll">
+                <h3>Ragdoll</h3>
+            </div>
+            <div class="card__info" id="ragdoll__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 12 a 17 anos</p>
+                            <p><b>Peso:</b> 4 a 9 kg</p>
+                            <p><b>Cores:</b> branco, castanho, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Ragdoll é um gato de porte gigante, pelagem cheia e temperamento dócil e dependente. O seu nome significa boneca de pano em inglês, pois ele relaxa completamente quando é carregado no colo. Ele é um ótimo animal doméstico, sociável e tolerante com crianças, outros gatos e até cachorros. Ele não mia muito, mas faz sons baixos e delicados. Ele não é muito ágil, por isso suas atividades e brincadeiras são mais moderadas.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-1.jpg" alt="Imagem de um gato Ragdoll"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-2.jpg" alt="Imagem de um gato Ragdoll"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-3.jpg" alt="Imagem de um gato Ragdoll"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-4.jpg" alt="Imagem de um gato Ragdoll"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-5.jpg" alt="Imagem de um gato Ragdoll"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/ragdoll/ragdoll-6.png" alt="Imagem de um gato Ragdoll"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('scottish'); defineType('scottish')">
+                <img src="./assets/img/gatos/perfil/scottish.png" alt="Imagem de um gato Scottish Fold">
+                <h3>Scottish Fold</h3>
+            </div>
+            <div class="card__info" id="scottish__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 10 a 15 anos</p>
+                            <p><b>Peso:</b> 2 a 6 kg</p>
+                            <p><b>Cores:</b> branco, castanho, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Scottish Fold é uma raça de gato que se originou na Escócia e se caracteriza pelas orelhas dobradas para frente. Esses gatinhos são inteligentes, leais e muito fofos. Eles se adaptam bem a diferentes ambientes e pessoas, pois são dóceis, calmos e não tímidos. Eles gostam de conviver com crianças e outros animais, desde que sejam acostumados desde cedo. Eles também são muito apegados às suas famílias e demonstram carinho. Além disso, eles têm alguns hábitos curiosos, como dormir de barriga para cima, deitar de bruços e sentar com as pernas esticadas e as patas apoiadas na barriga.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-1.jpg" alt="Imagem de um gato Scottish Fold"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-2.jpg" alt="Imagem de um gato Scottish Fold"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-3.jpg" alt="Imagem de um gato Scottish Fold"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-4.jpg" alt="Imagem de um gato Scottish Fold"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-5.jpg" alt="Imagem de um gato Scottish Fold"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/scottish/scottish-6.png" alt="Imagem de um gato Scottish Fold"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('siames'); defineType('siames')">
+                <img src="./assets/img/gatos/perfil/siames.jpg" alt="Imagem de um gato Siamês">
+                <h3>Siamês</h3>
+            </div>
+            <div class="card__info" id="siames__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 15 a 20 anos</p>
+                            <p><b>Peso:</b> 4 a 6 kg</p>
+                            <p><b>Cores:</b> bege, branco, cinza...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O gato Siamês se destaca por sua elegância e comprimento, que se estende do corpo à cauda, passando pelo pescoço e pelas pernas. Esse bichano adora se divertir e raramente fica quieto. Ele pode brincar por horas com seu brinquedo favorito, mas também sabe apreciar a tranquilidade. Nesses momentos, ele busca seu próprio espaço e espera que seja respeitado. Além de leais e sociáveis, os gatos Siameses se adaptam bem à convivência com outros animais. Eles são muito apegados aos humanos e gostam de participar das atividades cotidianas deles.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-1.jpg" alt="Imagem de um gato Siamês"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-2.jpg" alt="Imagem de um gato Siamês"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-3.jpg" alt="Imagem de um gato Siamês"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-4.jpg" alt="Imagem de um gato Siamês"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-5.jpg" alt="Imagem de um gato Siamês"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/siames/siames-6.jpg" alt="Imagem de um gato Siamês"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" onclick="openOverlay('sphynx'); defineType('sphynx')">
+                <img src="./assets/img/gatos/perfil/sphynx.png" alt="Imagem de um gato Sphynx">
+                <h3>Sphynx</h3>
+            </div>
+            <div class="card__info" id="sphynx__info">
+                <div class="info__bg" onclick="closeOverlay()"></div>
+                <div class="info__overlay">
+                    <span class="overlay__close" onclick="closeOverlay()"></span>
+                    <div class="overlay__content">
+                        <div class="overlay__top">
+                            <p><b>Expectativa de vida:</b> 8 a 14 anos</p>
+                            <p><b>Peso:</b> 3 a 7 kg</p>
+                            <p><b>Cores:</b> bege, branco, preto...</p>
+                        </div>
+                        <p class="overlay__text">
+                            O Sphynx é uma raça de gatos que se destaca pela ausência de pelos, que deixa à mostra as dobras da sua pele. Apenas algumas partes do seu corpo, como a ponta do rabo, as orelhas e a barriga, possuem pelos finos e curtos. A pele do Sphynx é um pouco oleosa, o que também o diferencia de outros gatos. Esses animais são muito carinhosos, brincalhões e leais, mas também desastrados e ciumentos. Eles se apegam a um membro da família e não o largam mais. Além disso, eles adoram crianças e ambientes quentes e confortáveis.
+                        </p>
+                        <div class="overlay__carousel">
+                            <h3 class="carousel__title">Galeria</h3>
+                            <!-- Slider main container -->
+                            <div class="swiper">
+                                <!-- Additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- Slides -->
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-1.jpg" alt="Imagem de um gato Sphynx"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-2.jpg" alt="Imagem de um gato Sphynx"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-3.jpg" alt="Imagem de um gato Sphynx"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-4.jpg" alt="Imagem de um gato Sphynx"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-5.jpg" alt="Imagem de um gato Sphynx"></div>
+                                    <div class="swiper-slide"><img src="./assets/img/gatos/galeria/sphynx/sphynx-6.png" alt="Imagem de um gato Sphynx"></div>
+                                </div>
+                            
+                                <!-- If we need navigation buttons -->
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            
+                                <!-- If we need scrollbar -->
+                                <div class="swiper-scrollbar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact">
+            <h2 id="contact__title">Contato</h2>
+            <p class="contact__text">Caso tenha alguma dúvida ou sugestão, não hesite em entrar em contato.</p>
+            <a href="mailto:pothersrich@gmail.com" target="_blank"><span class="contact__icon"></span></a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="content__links">
+                <h3 class="links__title">Com imagens de:</h3>
+                <ul class="links__list">
+                    <li><a href="https://br.freepik.com" target="_blank">Freepik</a></li>
+                    <li><a href="https://pixabay.com/pt/" target="_blank">Pixabay</a></li>
+                    <li><a href="https://unsplash.com/pt-br" target="_blank">Unsplash</a></li>
+                </ul>
+            </div>
+            <h3 class="content__text">Desenvolvido por <a href="https://github.com/Krjorn" target="_blank">Christopher Jesus da Silva</a>.</h3>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            loop: true,
+            spaceBetween: 16,
+            slidesPerView: 1.4,
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Responsive breakpoints
+            breakpoints: {
+                640: {
+                slidesPerView: 2.3,
+                },
+            }
+        });
+    </script>
+    <script src="./assets/script.js"></script>
+</body>
+</html>

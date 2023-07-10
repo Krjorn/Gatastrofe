@@ -1,0 +1,32 @@
+@use '../abstract/variable' as v;
+
+#header {
+    nav {
+        max-width: v.$max-w;
+        margin: auto;
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include v.link(v.$small, 500);
+    }
+}
+
+@media screen and (min-width: v.$bp-tablet) {
+    #header {
+        nav {
+            padding-inline: 1.5rem;
+            a {
+                font-size: v.$regular;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: v.$bp-desktop) {
+    #header {
+        nav {
+            padding-inline: 0;
+        }
+    }
+}
