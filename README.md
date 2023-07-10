@@ -1,6 +1,6 @@
 # Gatástrofe
 
-Site desenvolvido com a finalidade de por em prática o que tenho aprendido nos últimos meses, sendo um guia rápido sobre algumas espécies de gatos. Para ver o resultado basta acessar [esse link]().
+Site desenvolvido com a finalidade de por em prática o que tenho aprendido nos últimos meses, sendo um guia rápido sobre algumas espécies de gatos. Para ver o resultado basta acessar [esse link](https://krjorn.github.io/gatastrofe/).
 
 ![Imagem do site](./assets/img/readme/project.png#vitrinedev)
 
@@ -22,7 +22,7 @@ Com o tema definido, iniciei o processo de pesquisa e separação de informaçõ
 
 <img alt="Imagem com informações de pesquisa" src="./assets/img/readme/info.png" width="500"><br>
 
-Em seguida comecei a projetar [o layout]() do site no Figma. A princípio com um wireframe, depois defini algumas cores que poderia usar e fiz uma logo simples, dando prosseguimento e finalizando [o layout]() do site para alguns tamanhos de tela, escolhendo um grid de tamanho fixo para telas maiores.
+Em seguida comecei a projetar [o layout](https://www.figma.com/file/GMaCelPsZXBQKxpPkypRLa/Gat%C3%A1strofe?type=design&node-id=0%3A1&mode=design&t=2IsoODHy1jV51Za0-1) do site no Figma. A princípio com um wireframe, depois defini algumas cores que poderia usar e fiz uma logo simples, dando prosseguimento e finalizando [o layout](https://www.figma.com/file/GMaCelPsZXBQKxpPkypRLa/Gat%C3%A1strofe?type=design&node-id=0%3A1&mode=design&t=2IsoODHy1jV51Za0-1) do site para alguns tamanhos de tela, escolhendo um grid de tamanho fixo para telas maiores.
 
 <img alt="Imagem com exemplos de layout" src="./assets/img/readme/layout.png" width="500"><br>
 
