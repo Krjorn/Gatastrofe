@@ -9,4 +9,7 @@
     width: 64px;
     background: url(../img/icons/arrow-up.svg) no-repeat center/48px, v.$tertiary-color;
     border-radius: 50%;
+    &:hover {
+        background-color: v.$link-hover;
+    }
 }

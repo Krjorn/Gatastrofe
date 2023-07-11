@@ -284,4 +284,7 @@ html, body {
   width: 64px;
   background: url(../img/icons/arrow-up.svg) no-repeat center/48px, rgba(187, 83, 48, 0.5);
   border-radius: 50%;
+}
+#toTop:hover {
+  background-color: rgba(187, 83, 48, 0.7);
 }/*# sourceMappingURL=style.css.map */
